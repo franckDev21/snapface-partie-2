@@ -1,0 +1,15 @@
+<div class="p-4 bg-white shadow-2xl w-4/12 mx-auto rounded m-3" [ngClass]="{snapped: buttonText == 'Oops ! unsnap'}">
+  <h1 class="text-lg font-bold text-purple-400 py-2" [ngClass]="{snapped__title: buttonText == 'Oops ! unsnap'}">{{ snapFace.title | uppercase }}</h1>
+  <img [src]="snapFace.imageUrl" alt="image">
+  <p class="my-1">{{snapFace.createdDate | date:'longDate'}}</p>
+  <p>{{ snapFace.description }}</p>
+  <p *ngIf="snapFace.location" class="px-3 mt-2 py-1 bg-green-200 text-green-600 text-center">{{ snapFace.location }}</p>
+  <P class="mt-4">
+    <button
+      (click)="onSnap()"
+      class="px-6 py-2 active:scale-[90%] transition hover:bg-purple-500 bg-purple-700 rounded text-md text-white font-semibold">
+      {{ buttonText }}
+    </button>
+    <span class="inline-block pl-2 font-semibold text-gray-600">{{snapFace.snaps}}</span>
+  </P>
+</div>

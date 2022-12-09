@@ -2,3 +2,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.link{
+  @apply px-3 font-bold py-1 inline-block rounded bg-white text-purple-500;
+  &.active{
+    @apply bg-purple-500 text-white;
+  }
+}

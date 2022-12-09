@@ -1,9 +1,14 @@
 .snapped {
   background-color: rgba(lightgreen, 0.4) !important;
   color: darkgreen;
+
+  &__title{
+    color: #A855F7;
+  }
+
   button {
     background-color: #fff;
-    color: darkgreen;
+    color: #A855F7;
     &:active {
       box-shadow: lightgreen 0 0 5px;
     }
