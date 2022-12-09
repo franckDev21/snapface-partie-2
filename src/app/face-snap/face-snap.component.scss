@@ -1,0 +1,11 @@
+.snapped {
+  background-color: rgba(lightgreen, 0.4) !important;
+  color: darkgreen;
+  button {
+    background-color: #fff;
+    color: darkgreen;
+    &:active {
+      box-shadow: lightgreen 0 0 5px;
+    }
+  }
+}
