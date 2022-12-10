@@ -3,7 +3,7 @@ import {FaceSnap} from "../models/face-snap.model";
 
 @Injectable({
   providedIn: 'root'
-})
+}) 
 
 export class FaceSnapsServices {
   snapFaces:FaceSnap[] = [
